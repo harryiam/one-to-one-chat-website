@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>P!ng a friend</title>
+  <!--Link to CSS -->
+  <link href="../static/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/style.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+  <form class="form-signin" action="{{url_for('index')}}" method="POST">
+    <h1 class="h2 mb-3 font-weight-normal">Welcome to P!ng</h1><br><br>
+    <h1 class="h2 mb-3 font-weight-normal">{{message}}</h1><br><br>
+    <input type="text" id="username" name="username" class="form-control" placeholder="Registerd Username" required autofocus><br>
+    <input type="text" id="password" name="password" class="form-control" placeholder="Registerd password" required><br>
+    <button class="btn btn-lg btn-primary btn-block" value="submit">Log!n</button>
+  </form>
+</body>
+ 
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>P!NG</title>
+        <link href="../static/bootstrap.min.css" rel="stylesheet" />
+        <link href="../static/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <form class="form-signin" action="{{url_for('newuser')}}" method="POST">
+            <button class="btn btn-lg btn-primary btn-block" value="submit">New User</button>
+        </form>
+        <form class="form-signin" action="{{url_for('login')}}" method="POST">
+            <button class="btn btn-lg btn-primary btn-block" value="submit">Existing User</button>
+        </form>
+        
+    </body>
+</html>
